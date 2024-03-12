@@ -1,0 +1,40 @@
+
+.logo{
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+.bg{
+  height: 750px
+}
+.rocketBg{
+  margin-top: -60px;
+  height: 1075px;
+}
+label{
+  font-size: 2rem;
+}
+input{
+  width: 50%;
+  height: 30px;
+  font-size: 1rem
+}
+textarea{
+  width: 50%;
+  height: 200px;
+  font-size: 1rem
+}
+.spaceBg2{
+  margin-top: -100px;
+}
+.submitBtn{
+  width: 60%;
+  margin-top: 30px;
+  margin-left: 80px;
+  border-radius: 2px;;
+ 
+}
+
+
+
