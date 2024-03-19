@@ -43,7 +43,7 @@ const Experience = () => {
                 </div>
                 <div style={styles.figmaBlock}>
                     <img style={styles.figma} src={figma} alt='figma'/>
-                    <p>2 1/2 designing websites and apps with Figma</p>
+                    <p>2 1/2 years designing websites and apps with Figma</p>
                 </div>
             </div>
         </div>
