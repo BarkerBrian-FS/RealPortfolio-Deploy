@@ -1,6 +1,5 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-import spaceBg2 from '../images/spaceBg2.jpg'
 
 export const ContactForm = () => {
   const form = useRef();
