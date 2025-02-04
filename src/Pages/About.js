@@ -25,7 +25,7 @@ const About = () => {
             <Nav/>
         </div>
         <div className='body-space' style = {styles.bodySpace}>
-            <div class='bg' style={{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spacebg})`}}>
+            <div class='bg' style={{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spacebg})`}}>
             <div style={styles.about}>
                 <div style={styles.intro}>
                     <h1 style={styles.name} class='name'>Brian Barker</h1>
@@ -40,7 +40,7 @@ const About = () => {
             </div>
         </div>
         <div>
-            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${galaxybg})`}} >
+            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${galaxybg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <img style={styles.html} src={html} alt='html'/>
@@ -74,7 +74,7 @@ const About = () => {
             </div>
         </div>
         <div>
-             <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spaceBgProject})`}} >
+             <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBgProject})`}} >
                     <div className='video'>
                         <Video/>
                     </div>
@@ -82,7 +82,7 @@ const About = () => {
         </div>
         <div>
             <div>
-                <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spaceBg2})`}} >
+                <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2})`}} >
                     <div style={styles.contactForm}>
                         <ContactForm/>
                     </div>
