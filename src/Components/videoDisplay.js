@@ -25,7 +25,7 @@ const styles = {
         alignItems: 'center'
     },
     asteroid:{
-        marginTop: '8%',
+        marginTop: '9%',
         height: 'auto',
         width: '80%',
         marginLeft: '10%'
@@ -43,7 +43,7 @@ const styles = {
         fontWeight: 'bold',
         fontStyle: 'normal',
         fontSize: '4rem',
-        marginTop: '6%',
+        marginTop: '0%',
         marginBottom: '-8%',
         marginLeft: '38%'
     }

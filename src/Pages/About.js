@@ -25,7 +25,7 @@ const About = () => {
             <Nav/>
         </div>
         <div className='body-space' style = {styles.bodySpace}>
-            <div class='bg' style={{backgroundImage: `radial-gradient(circle at center, rgba(241, 237, 237, 0), rgb(13, 13, 20)),url(${spacebg})`}}>
+            <div class='bg' style={{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spacebg})`}}>
             <div style={styles.about}>
                 <div style={styles.intro}>
                     <h1 style={styles.name} class='name'>Brian Barker</h1>
@@ -40,7 +40,7 @@ const About = () => {
             </div>
         </div>
         <div>
-            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(circle at center, rgba(235, 231, 231, 0.5), rgb(9, 9, 17)),url(${galaxybg})`}} >
+            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${galaxybg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <img style={styles.html} src={html} alt='html'/>
@@ -74,7 +74,7 @@ const About = () => {
             </div>
         </div>
         <div>
-             <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(circle at center, rgba(229, 225, 225, 0.5), rgba(0, 0, 0, 0.5)),url(${spaceBgProject})`}} >
+             <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spaceBgProject})`}} >
                     <div className='video'>
                         <Video/>
                     </div>
@@ -82,7 +82,7 @@ const About = () => {
         </div>
         <div>
             <div>
-                <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(circle at center, rgba(229, 228, 228, 0.5), rgb(0, 0, 0)),url(${spaceBg2})`}} >
+                <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 15%, black 70%),url(${spaceBg2})`}} >
                     <div style={styles.contactForm}>
                         <ContactForm/>
                     </div>
@@ -265,7 +265,5 @@ const styles={
         justifyContent: 'spaceBetween',
         
     },
-    
-
     
 };
