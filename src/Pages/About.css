@@ -4,3 +4,15 @@
     max-height: 100%;
     overflow-y: hidden;
 }
+.bg{
+    background-size: cover;
+}
+.rocketBg{
+    background-size: cover;
+}
+.space{
+    background-size: cover;
+}
+.spaceBg2{
+    background-size: cover;
+}

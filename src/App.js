@@ -1,8 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Routes , Route } from 'react-router-dom'
 import About from "./Pages/About";
-import Projects from "./Pages/Projects";
-import Experience from "./Pages/Experience";
 import './App.css';
 
 function App() {
@@ -11,8 +9,6 @@ function App() {
       <section>
         <Routes>
           <Route path="/" element={<About/>} />
-          <Route path="/experience" element={<Experience/>} />
-          <Route path="/projects" element={<Projects/>} />
         </Routes>
       </section>
     </div>

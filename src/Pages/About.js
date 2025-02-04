@@ -12,7 +12,6 @@ import mongo from '../images/mongodb.svg';
 import galaxybg from '../images/galaxy.jpg'
 import spaceBgProject from '../images/spaceBgProject.jpg';
 import Video from '../Components/videoDisplay';
-import {Link} from 'react-router-dom';
 import github from '../images/github.png';
 import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
@@ -25,8 +24,8 @@ const About = () => {
         <div style={styles.Nav}>
             <Nav/>
         </div>
-        <div className='body-space'>
-            <div class='bg' style={{backgroundImage: `url(${spacebg})`}}>
+        <div className='body-space' style = {styles.bodySpace}>
+            <div class='bg' style={{backgroundImage: `radial-gradient(circle at center, rgba(241, 237, 237, 0), rgb(13, 13, 20)),url(${spacebg})`}}>
             <div style={styles.about}>
                 <div style={styles.intro}>
                     <h1 style={styles.name} class='name'>Brian Barker</h1>
@@ -41,41 +40,41 @@ const About = () => {
             </div>
         </div>
         <div>
-            <div class='rocketBg' style= {{backgroundImage: `url(${galaxybg})`}} >
+            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(circle at center, rgba(235, 231, 231, 0.5), rgb(9, 9, 17)),url(${galaxybg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <img style={styles.html} src={html} alt='html'/>
-                                <p>2 1/2 years of experience working with HTML5</p>
+                                <p>3 years of experience working with HTML5</p>
                             </div>
                             <div style={styles.cssBlock}>
                                 <img style={styles.css} src={css} alt='css'/>
-                                <p>2 1/2 years of experience working with CSS</p>
+                                <p>3 years of experience working with CSS</p>
                             </div>
                             <div style={styles.jsBlock}>
                                 <img style={styles.js} src={js} alt='javascript'/>
-                                <p>2 1/2 years of experience working with Javascript</p>
+                                <p>3 years of experience working with Javascript</p>
                             </div>
                             <div style={styles.nodeBlock}>
                                 <img style={styles.node} src={nodejs} alt='nodejs'/>
-                                <p>2 1/2 years of experience working with NodeJs</p>
+                                <p>3 years of experience working with NodeJs</p>
                             </div>
                             <div style={styles.reactBlock}>
                                 <img style={styles.react} src={react} alt='react'/>
-                                <p>2 1/2 years of experience working with React</p>
+                                <p>3 years of experience working with React</p>
                             </div>
                             <div style={styles.mongoBlock}>
                                 <img style={styles.mongo} src={mongo} alt='mongodb'/>
-                                <p>2 1/2 years of experience working with MongoDb</p>
+                                <p>3 years of experience working with MongoDb</p>
                             </div>
                             <div style={styles.figmaBlock}>
                                 <img style={styles.figma} src={figma} alt='figma'/>
-                                <p>2 1/2 years designing websites and apps with Figma</p>
+                                <p>3 years designing websites and apps with Figma</p>
                             </div>
                         </div>
             </div>
         </div>
         <div>
-             <div class='space' style= {{backgroundImage: `url(${spaceBgProject})`}} >
+             <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(circle at center, rgba(229, 225, 225, 0.5), rgba(0, 0, 0, 0.5)),url(${spaceBgProject})`}} >
                     <div className='video'>
                         <Video/>
                     </div>
@@ -83,7 +82,7 @@ const About = () => {
         </div>
         <div>
             <div>
-                <div class='spaceBg2' style= {{backgroundImage: `url(${spaceBg2})`}} >
+                <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(circle at center, rgba(229, 228, 228, 0.5), rgb(0, 0, 0)),url(${spaceBg2})`}} >
                     <div style={styles.contactForm}>
                         <ContactForm/>
                     </div>
@@ -111,7 +110,7 @@ const styles={
         flexDirection: 'row',
     },
     img:{
-        height: '1200px',
+        height: '950px',
         width: 'auto',
         marginTop: '6rem',
         marginRight: '-20rem',
@@ -127,9 +126,9 @@ const styles={
     },
     para:{
         fontFamily: 'Anta, sans-serif',
-        fontWeight: 500,
+        fontWeight: 400,
         fontStyle: 'normal',
-        fontSize: '1.8rem',
+        fontSize: '1.5rem',
         color:'white',
         marginTop: '-2rem',
         marginLeft: '20rem',
@@ -255,7 +254,7 @@ const styles={
         marginLeft: '10px'
     },
     contactForm:{
-        width: '100%'
+        width: '100%',
     },
     contactBtn:{
         display: 'flex',
@@ -265,7 +264,8 @@ const styles={
         marginTop: '40px',
         justifyContent: 'spaceBetween',
         
-    }
+    },
+    
 
     
 };

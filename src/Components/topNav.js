@@ -11,9 +11,9 @@ const Nav = () => {
             </div>
             <nav className='navLink' style = {styles.nav} >
                 <Link to="/" style={styles.link}>About</Link>
-                <Link to="/experience" style={styles.link}>Experience</Link>
-                <Link to="/projects" style={styles.link}>Projects</Link>
-                <Link to="/contact" style={styles.link}>Contact</Link>
+                <Link to= 'experience' style={styles.link}>Experience</Link>
+                <Link to= 'projects' style={styles.link}>Projects</Link>
+                <Link to= 'contact' style={styles.link}>Contact</Link>
              </nav>
         </header>
         </>
