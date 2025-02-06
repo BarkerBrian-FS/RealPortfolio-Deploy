@@ -16,6 +16,7 @@ import github from '../images/github.png';
 import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
 import spaceBg2 from '../images/spaceBg2.jpg'
+
 import '../Pages/About.css';
 
 const About = () => {
@@ -96,7 +97,9 @@ const About = () => {
                     </div>
                 </div>
             </div>
+        
         </div>
+    
 
         </>
     )
