@@ -9,7 +9,7 @@ import nodejs from '../images/nodejs.png';
 import html from '../images/html.png';
 import react from '../images/physics.png';
 import mongo from '../images/mongodb.svg';
-import galaxybg from '../images/galaxy.jpg'
+import galaxyBg from '../images/galaxy.jpg'
 import spaceBgProject from '../images/spaceBgProject.jpg';
 import Video from '../Components/videoDisplay';
 import github from '../images/github.png';
@@ -29,47 +29,81 @@ const About = () => {
             <div class='bg' style={{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spacebg})`}}>
             <div style={styles.about}>
                 <div style={styles.intro}>
-                    <h1 style={styles.name} class='name'>Brian Barker</h1>
-                    <p style={styles.para}>Welcome! I am a hardworking veteran looking to enter the tech field.
-                    I recently graduated from school for web development and design.
-                    I have a passion for creating in the digital space and would love to find a company where I can contribute and grow my skills.</p>
+                    <motion.div
+                    animate={{ x:50 }}
+                    transition={{ ease: "easeOut", duration: 5 }}>
+                        <h1 style={styles.name} class='name'>Brian Barker</h1>
+                        <p style={styles.para}>Welcome! I am a hardworking veteran looking to enter the tech field.
+                        I recently graduated from school for web development and design.
+                        I have a passion for creating in the digital space and would love to find a company where I can contribute and grow my skills.</p>
+                    </motion.div>
                 </div>
-                <div>
+                <motion.div
+                    animate={{ x:-100 }}
+                    transition={{ ease: "easeOut", duration: 5 }}>
                     <img src={me} alt='me' style={styles.img}/>
-                </div>
+                </motion.div>
             </div>
             </div>
         </div>
         <div>
-            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${galaxybg})`}} >
+            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${galaxyBg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
+                                <motion.div>
                                 <img style={styles.html} src={html} alt='html'/>
-                                <p>3 years of experience working with HTML5</p>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with HTML5</p>
+                                </motion.div>
                             </div>
                             <div style={styles.cssBlock}>
-                                <img style={styles.css} src={css} alt='css'/>
-                                <p>3 years of experience working with CSS</p>
+                                <motion.div>
+                                    <img style={styles.css} src={css} alt='css'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with CSS</p>
+                                </motion.div>
                             </div>
                             <div style={styles.jsBlock}>
-                                <img style={styles.js} src={js} alt='javascript'/>
-                                <p>3 years of experience working with Javascript</p>
+                                <motion.div>
+                                    <img style={styles.js} src={js} alt='javascript'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with Javascript</p>
+                                </motion.div>
                             </div>
                             <div style={styles.nodeBlock}>
-                                <img style={styles.node} src={nodejs} alt='nodejs'/>
-                                <p>3 years of experience working with NodeJs</p>
+                                <motion.div>
+                                    <img style={styles.node} src={nodejs} alt='nodejs'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with NodeJs</p>
+                                </motion.div>
                             </div>
                             <div style={styles.reactBlock}>
-                                <img style={styles.react} src={react} alt='react'/>
-                                <p>3 years of experience working with React</p>
+                                <motion.div>
+                                    <img style={styles.react} src={react} alt='react'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with React</p>
+                                </motion.div>
                             </div>
                             <div style={styles.mongoBlock}>
-                                <img style={styles.mongo} src={mongo} alt='mongodb'/>
-                                <p>3 years of experience working with MongoDb</p>
+                                <motion.div>
+                                    <img style={styles.mongo} src={mongo} alt='mongodb'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years of experience working with MongoDb</p>
+                                </motion.div>
                             </div>
                             <div style={styles.figmaBlock}>
-                                <img style={styles.figma} src={figma} alt='figma'/>
-                                <p>3 years designing websites and apps with Figma</p>
+                                <motion.div>
+                                    <img style={styles.figma} src={figma} alt='figma'/>
+                                </motion.div>
+                                <motion.div>
+                                    <p>3 years designing websites and apps with Figma</p>
+                                </motion.div>
                             </div>
                         </div>
             </div>
