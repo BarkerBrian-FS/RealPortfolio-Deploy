@@ -9,7 +9,7 @@ import nodejs from '../images/nodejs.png';
 import html from '../images/html.png';
 import react from '../images/physics.png';
 import mongo from '../images/mongodb.svg';
-import galaxyBg from '../images/galaxy.jpg'
+import galaxyBg from '../images/galaxyBg.jpg'
 import spaceBgProject from '../images/spaceBgProject.jpg';
 import Video from '../Components/videoDisplay';
 import github from '../images/github.png';
@@ -31,7 +31,8 @@ const About = () => {
                 <div style={styles.intro}>
                     <motion.div
                     animate={{ x:50 }}
-                    transition={{ ease: "easeOut", duration: 5 }}>
+                    transition={{ ease: "easeOut", duration: 3 }}
+                    whileInView={ true }>
                         <h1 style={styles.name} class='name'>Brian Barker</h1>
                         <p style={styles.para}>Welcome! I am a hardworking veteran looking to enter the tech field.
                         I recently graduated from school for web development and design.
@@ -40,14 +41,16 @@ const About = () => {
                 </div>
                 <motion.div
                     animate={{ x:-100 }}
-                    transition={{ ease: "easeOut", duration: 5 }}>
+                    transition={{ ease: "easeOut", duration: 3 }}
+                    initial={{ scale: .5 }}
+                    whileInView={{ scale: 1.1, }}>
                     <img src={me} alt='me' style={styles.img}/>
                 </motion.div>
             </div>
             </div>
         </div>
         <div>
-            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${galaxyBg})`}} >
+            <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <motion.div>

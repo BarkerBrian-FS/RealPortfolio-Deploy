@@ -37,6 +37,7 @@ const style = {
     backgroundImage: `url(${LogoBackground})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    
   }
 
 }
