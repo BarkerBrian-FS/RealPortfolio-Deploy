@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 export const ContactForm = () => {
   const form = useRef();
@@ -42,12 +43,16 @@ export const ContactForm = () => {
           </div>
             <textarea name="message" />
         </div>
-        <div class='submitBtn'><input type="submit" value="Send" /></div>
+        <motion.div
+        whileHover={{ scale: 1.2 }}
+        whileTap={{ scale: 1.1 }}>
+          <div class='submitBtn' style={style.input}><input type="submit" value="Send" /></div>
+        </motion.div>
       </form>
   );
 };
 
-export default ContactForm
+export default ContactForm;
 
 const style = {
   form:{
@@ -71,5 +76,10 @@ const style = {
   message:{
     marginTop: '15px',
     color: 'white'
+  },
+  input:{
+    width: '20%',
+    marginLeft: '20%',
+    marginRight: 'auto',
   }
 }
