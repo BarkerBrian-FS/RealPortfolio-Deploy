@@ -64,113 +64,71 @@ const About = () => {
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '-100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
-                                <img style={styles.html} src={html} alt='html'/>
+                                    >
+                                    <img style={styles.html} src={html} alt='html'/>
                                 </motion.div>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <p>3 years of experience working with HTML5</p>
                                 </motion.div>
                             </div>
                             <div style={styles.cssBlock}>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '-100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <img style={styles.css} src={css} alt='css'/>
                                 </motion.div>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <p>3 years of experience working with CSS</p>
                                 </motion.div>
                             </div>
                             <div style={styles.jsBlock}>
                                 <motion.div
-                                ref={ref} // Set the ref for intersection observer
-                                initial={{ x: '-100vw' }} // Start off-screen to the right
-                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                >
                                     <img style={styles.js} src={js} alt='javascript'/>
                                 </motion.div>
                                 <motion.div
-                                ref={ref} // Set the ref for intersection observer
-                                initial={{ x: '100vw' }} // Start off-screen to the right
-                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                >
                                     <p>3 years of experience working with Javascript</p>
                                 </motion.div>
                             </div>
                             <div style={styles.nodeBlock}>
                                 <motion.div
-                                ref={ref} // Set the ref for intersection observer
-                                initial={{ x: '-100vw' }} // Start off-screen to the right
-                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                >
                                     <img style={styles.node} src={nodejs} alt='nodejs'/>
                                 </motion.div>
                                 <motion.div
-                                ref={ref} // Set the ref for intersection observer
-                                initial={{ x: '100vw' }} // Start off-screen to the right
-                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                >
                                     <p>3 years of experience working with NodeJs</p>
                                 </motion.div>
                             </div>
                             <div style={styles.reactBlock}>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '-100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <img style={styles.react} src={react} alt='react'/>
                                 </motion.div>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <p>3 years of experience working with React</p>
                                 </motion.div>
                             </div>
                             <div style={styles.mongoBlock}>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '-100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <img style={styles.mongo} src={mongo} alt='mongodb'/>
                                 </motion.div>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <p>3 years of experience working with MongoDb</p>
                                 </motion.div>
                             </div>
                             <div style={styles.figmaBlock}>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '-100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <img style={styles.figma} src={figma} alt='figma'/>
                                 </motion.div>
                                 <motion.div
-                                    ref={ref} // Set the ref for intersection observer
-                                    initial={{ x: '100vw' }} // Start off-screen to the right
-                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
-                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                                    >
                                     <p>3 years designing websites and apps with Figma</p>
                                 </motion.div>
                             </div>
