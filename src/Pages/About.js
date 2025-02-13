@@ -16,10 +16,16 @@ import github from '../images/github.png';
 import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
 import spaceBg2 from '../images/spaceBg2.jpg'
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 import '../Pages/About.css';
+import { useInView } from 'react-intersection-observer';
+import { b } from 'framer-motion/client';
 
 const About = () => {
+    const { ref, inView } = useInView({
+        triggerOnce: true, 
+        threshold: 0.1, 
+      });
     return(
         <>
         <div style={styles.Nav}>
@@ -30,9 +36,9 @@ const About = () => {
             <div style={styles.about}>
                 <div style={styles.intro}>
                     <motion.div
-                    animate={{ x:50 }}
-                    transition={{ ease: "easeOut", duration: 3 }}
-                    whileInView={ true }>
+                        animate={{ x:50 }}
+                        transition={{ ease: "easeOut", duration: 3 }}
+                        whileInView={ true }>
                         <h1 style={styles.name} class='name'>Brian Barker</h1>
                         <p style={styles.para}>Welcome! I am a hardworking veteran looking to enter the tech field.
                         I recently graduated from school for web development and design.
@@ -40,10 +46,14 @@ const About = () => {
                     </motion.div>
                 </div>
                 <motion.div
-                    animate={{ x:-100 }}
+                    /*animate={{ x:-100 }}
                     transition={{ ease: "easeOut", duration: 3 }}
                     initial={{ scale: .5 }}
-                    whileInView={{ scale: 1.1, }}>
+                    whileInView={{ scale: 1.1, }}*/
+                    ref={ref} // Set the ref for intersection observer
+                    initial={{ x: '100vw' }} // Start off-screen to the right
+                    animate={{ x: inView ? 0 : '-10vw' }} // Move to the normal position when in view
+                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                     <img src={me} alt='me' style={styles.img}/>
                 </motion.div>
             </div>
@@ -53,58 +63,114 @@ const About = () => {
             <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})`}} >
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '-100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                 <img style={styles.html} src={html} alt='html'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with HTML5</p>
                                 </motion.div>
                             </div>
                             <div style={styles.cssBlock}>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '-100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.css} src={css} alt='css'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with CSS</p>
                                 </motion.div>
                             </div>
                             <div style={styles.jsBlock}>
-                                <motion.div>
+                                <motion.div
+                                ref={ref} // Set the ref for intersection observer
+                                initial={{ x: '-100vw' }} // Start off-screen to the right
+                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.js} src={js} alt='javascript'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                ref={ref} // Set the ref for intersection observer
+                                initial={{ x: '100vw' }} // Start off-screen to the right
+                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with Javascript</p>
                                 </motion.div>
                             </div>
                             <div style={styles.nodeBlock}>
-                                <motion.div>
+                                <motion.div
+                                ref={ref} // Set the ref for intersection observer
+                                initial={{ x: '-100vw' }} // Start off-screen to the right
+                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.node} src={nodejs} alt='nodejs'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                ref={ref} // Set the ref for intersection observer
+                                initial={{ x: '100vw' }} // Start off-screen to the right
+                                animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with NodeJs</p>
                                 </motion.div>
                             </div>
                             <div style={styles.reactBlock}>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '-100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.react} src={react} alt='react'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with React</p>
                                 </motion.div>
                             </div>
                             <div style={styles.mongoBlock}>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '-100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.mongo} src={mongo} alt='mongodb'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years of experience working with MongoDb</p>
                                 </motion.div>
                             </div>
                             <div style={styles.figmaBlock}>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '-100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <img style={styles.figma} src={figma} alt='figma'/>
                                 </motion.div>
-                                <motion.div>
+                                <motion.div
+                                    ref={ref} // Set the ref for intersection observer
+                                    initial={{ x: '100vw' }} // Start off-screen to the right
+                                    animate={{ x: inView ? 0 : '-50vw' }} // Move to the normal position when in view
+                                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                                     <p>3 years designing websites and apps with Figma</p>
                                 </motion.div>
                             </div>
@@ -125,12 +191,14 @@ const About = () => {
                         <ContactForm/>
                     </div>
                     <div style={styles.contactBtn}>
-                        <div>
+                        <motion.div
+                            whileHover={{ scale: 1.1 }} style={styles.github}>
                             <a href='https://github.com/BarkerBrian-FS?tab=repositories'><img  style={styles.github} src={github} alt='github'/></a>
-                        </div>
-                        <div>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}>
                             <a href='https://www.linkedin.com/in/brian-barker-498537202/'><img  style={styles.linkedIn} src={linkedIn}  alt='linkedIn'/></a>
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>
@@ -286,7 +354,9 @@ const styles={
     github:{
         height: '105px',
         width: '105px',
-        marginRight: '10px'
+        marginRight: '10px',
+        backgroundColor: 'white',
+        borderRadius: '20%'
     },
     linkedIn:{
         height: '105px',
@@ -303,7 +373,6 @@ const styles={
         marginRight: 'auto',
         marginTop: '40px',
         justifyContent: 'spaceBetween',
-        
     },
     
 };
