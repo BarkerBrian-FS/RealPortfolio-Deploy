@@ -16,7 +16,7 @@ import github from '../images/github.png';
 import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
 import spaceBg2 from '../images/spaceBg2.jpg'
-import { color, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import '../Pages/About.css';
 import { useInView } from 'react-intersection-observer';
 import { useRef } from "react";
@@ -49,8 +49,9 @@ const About = () => {
                     initial={{ scale: .5 }}
                     whileInView={{ scale: 1.1, }}*/
                     ref={ref} // Set the ref for intersection observer
-                    initial={{ x: '100vw' }} // Start off-screen to the right
+                    initial={{ x: '100vw' }} // Start off-screen to right side
                     animate={{ x: isInView ? 0 : '-10vw' }} // Move to the normal position when in view
+                    //spring animation at the end of movement 
                     transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                     <img src={me} alt='me' style={styles.img}/>
                 </motion.div>
