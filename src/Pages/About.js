@@ -19,13 +19,11 @@ import spaceBg2 from '../images/spaceBg2.jpg'
 import { color, motion } from 'framer-motion';
 import '../Pages/About.css';
 import { useInView } from 'react-intersection-observer';
-import { b } from 'framer-motion/client';
+import { useRef } from "react";
 
 const About = () => {
-    const { ref, inView } = useInView({
-        triggerOnce: true, 
-        threshold: 0.1, 
-      });
+    const ref = useRef(null);
+    const isInView = useInView(ref, { once: true });
     return(
         <>
         <div style={styles.Nav}>
@@ -52,7 +50,7 @@ const About = () => {
                     whileInView={{ scale: 1.1, }}*/
                     ref={ref} // Set the ref for intersection observer
                     initial={{ x: '100vw' }} // Start off-screen to the right
-                    animate={{ x: inView ? 0 : '-10vw' }} // Move to the normal position when in view
+                    animate={{ x: isInView ? 0 : '-10vw' }} // Move to the normal position when in view
                     transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
                     <img src={me} alt='me' style={styles.img}/>
                 </motion.div>
@@ -64,71 +62,100 @@ const About = () => {
                         <div style={styles.experience}>
                             <div style= {styles.htmlBlock}>
                                 <motion.div
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
                                     >
                                     <img style={styles.html} src={html} alt='html'/>
                                 </motion.div>
                                 <motion.div
-                                    >
+                                   initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <p>3 years of experience working with HTML5</p>
                                 </motion.div>
                             </div>
                             <div style={styles.cssBlock}>
                                 <motion.div
-                                    >
+                                   initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <img style={styles.css} src={css} alt='css'/>
                                 </motion.div>
                                 <motion.div
-                                    >
+                                   initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <p>3 years of experience working with CSS</p>
                                 </motion.div>
                             </div>
                             <div style={styles.jsBlock}>
                                 <motion.div
-                                >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <img style={styles.js} src={js} alt='javascript'/>
                                 </motion.div>
                                 <motion.div
-                                >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <p>3 years of experience working with Javascript</p>
                                 </motion.div>
                             </div>
                             <div style={styles.nodeBlock}>
                                 <motion.div
-                                >
+                                        initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <img style={styles.node} src={nodejs} alt='nodejs'/>
                                 </motion.div>
                                 <motion.div
-                                >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }} >
                                     <p>3 years of experience working with NodeJs</p>
                                 </motion.div>
                             </div>
                             <div style={styles.reactBlock}>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <img style={styles.react} src={react} alt='react'/>
                                 </motion.div>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <p>3 years of experience working with React</p>
                                 </motion.div>
                             </div>
                             <div style={styles.mongoBlock}>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <img style={styles.mongo} src={mongo} alt='mongodb'/>
                                 </motion.div>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <p>3 years of experience working with MongoDb</p>
                                 </motion.div>
                             </div>
                             <div style={styles.figmaBlock}>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <img style={styles.figma} src={figma} alt='figma'/>
                                 </motion.div>
                                 <motion.div
-                                    >
+                                    initial={{ opacity: 0, y: 50 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: "easeOut" }}>
                                     <p>3 years designing websites and apps with Figma</p>
                                 </motion.div>
                             </div>
