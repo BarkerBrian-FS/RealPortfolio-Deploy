@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
-
+import buttonPicture from '../images/buttonPicture.jpg';
 export const ContactForm = () => {
   const form = useRef();
 
@@ -43,12 +43,9 @@ export const ContactForm = () => {
           </div>
             <textarea name="message" />
         </div>
-        <motion.div
-            initial={{}}
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}>
-          <button type="submit" style={style.input}>Send</button>
-        </motion.div>
+        <div>
+          <motion.button whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})` }} type="submit" style={style.input}>Send</motion.button>
+        </div>
       </form>
   );
 };
