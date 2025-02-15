@@ -350,7 +350,7 @@ const styles={
         marginLeft: '10px'
     },
     contactForm:{
-        width: '100%',
+
     },
     contactBtn:{
         display: 'flex',

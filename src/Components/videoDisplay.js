@@ -1,7 +1,6 @@
 import React from 'react';
 import asteroid from '../videos/asteroids.mp4';
 import cryptoWatch from '../videos/cryptoWatch.mp4';
-
 const videoDisplay = () => {
   return (
     <div className='container'>
@@ -19,7 +18,7 @@ const videoDisplay = () => {
 export default videoDisplay
 
 const styles = {
-    container:{
+        container:{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center'
@@ -27,6 +26,7 @@ const styles = {
     asteroid:{
         marginTop: '9%',
         height: 'auto',
+        width: '80%',
         width: '80%',
         marginLeft: '10%'
     },

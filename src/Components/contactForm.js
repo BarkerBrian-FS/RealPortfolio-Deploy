@@ -44,9 +44,9 @@ export const ContactForm = () => {
             <textarea name="message" />
         </div>
         <motion.div
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 1.1 }}>
-          <div class='submitBtn' style={style.input}><input type="submit" value="Send" /></div>
+            whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}>
+          <button type="submit" style={style.input}>Send</button>
         </motion.div>
       </form>
   );
@@ -77,8 +77,12 @@ const style = {
   },
   input:{
     width: '20%',
-    marginLeft: '20%',
+    height: '40px',
+    marginLeft: '15%',
     marginRight: 'auto',
+    marginTop: '15px',
     borderRadius: '8px',
-  }
+   
+  },
+
 }
