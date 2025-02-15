@@ -44,7 +44,9 @@ export const ContactForm = () => {
             <textarea name="message" />
         </div>
         <div>
-          <motion.button whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})` }} type="submit" style={style.input}>Send</motion.button>
+          <motion.button 
+          whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }} 
+          type="submit" style={style.input}>Send</motion.button>
         </div>
       </form>
   );
