@@ -1,0 +1,28 @@
+.carousel{
+    height: 300vh;
+
+}
+.carousel__container{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    
+}
+.carousel__item{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3vw;
+    align-items: center;
+    justify-content: center;
+    padding: 0 4rem 0 4rem;
+}
