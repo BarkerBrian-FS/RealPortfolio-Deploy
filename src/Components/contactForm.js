@@ -45,7 +45,8 @@ export const ContactForm = () => {
         </div>
         <div>
           <motion.button 
-          whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }} 
+          whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }}
+          whileTap={{ scale: 0.9 }} 
           type="submit" style={style.input}>Send</motion.button>
         </div>
       </form>
@@ -82,7 +83,10 @@ const style = {
     marginRight: 'auto',
     marginTop: '15px',
     borderRadius: '8px',
-   
+    fontFamily: 'Anta, sans-serif',
+    fontWeight: 'bold',
+    fontStyle: 'normal',
+    fontSize: '1.5rem',
   },
 
 }

@@ -1,7 +1,20 @@
 import React from 'react';
 import asteroid from '../videos/asteroids.mp4';
 import cryptoWatch from '../videos/cryptoWatch.mp4';
+import { motion, useScroll, transform } from 'framer-motion';
+
 const videoDisplay = () => {
+  return (
+    
+    <div>videoDisplay</div>
+  )
+}
+
+export default videoDisplay
+
+
+
+/*const videoDisplay = () => {
   return (
     <div className='container'>
         <div className='asteroid'>
@@ -47,4 +60,4 @@ const styles = {
         marginBottom: '-8%',
         marginLeft: '38%'
     }
-};
+};*/
