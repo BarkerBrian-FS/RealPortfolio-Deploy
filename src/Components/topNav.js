@@ -54,7 +54,8 @@ const styles= {
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
-        marginRight: '3%'
+        marginRight: '3%',
+        listStyle: 'none'
     },
     link:{
         fontFamily: 'Anta, sans-serif',
@@ -63,6 +64,7 @@ const styles= {
         fontSize: '1.8rem',
         margin: ".5rem",
         textDecoration: "none",
-        color: '#e0e1dd'
+        color: '#e0e1dd',
+        
     }
 };

@@ -1,19 +1,6 @@
-import React from 'react';
+import React,{ useRef } from 'react';
 import asteroid from '../videos/asteroids.mp4';
 import cryptoWatch from '../videos/cryptoWatch.mp4';
-import { motion, useScroll, transform } from 'framer-motion';
-import './videoDisplay.css';
-
-const videoDisplay = () => {
-  return (
-
-    <div>videoDisplay</div>
-  )
-}
-
-export default videoDisplay
-
-
 
 /*const videoDisplay = () => {
   return (
