@@ -37,7 +37,8 @@ const About = () => {
                     <motion.div
                         animate={{ x:50 }}
                         transition={{ ease: "easeOut", duration: 3 }}
-                        whileInView={ true }>
+                        whileInView={ true }
+                        viewport={{ once: true }}>
                         <h1 style={styles.name} class='name'>Brian Barker</h1>
                         <p style={styles.para}>Welcome! I am a hardworking veteran looking to enter the tech field.
                         I recently graduated from school for web development and design.
@@ -53,7 +54,8 @@ const About = () => {
                     initial={{ x: '100vw' }} // Start off-screen to right side
                     animate={{ x: isInView ? 0 : '-10vw' }} // Move to the normal position when in view
                     //spring animation at the end of movement 
-                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}>
+                    transition={{ type: 'spring', stiffness: 100, damping: 50 }}
+                    viewport={{ once: true }}>
                     <img src={me} alt='me' style={styles.img}/>
                 </motion.div>
             </div>
@@ -67,13 +69,14 @@ const About = () => {
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     transition={{ duration: 0.8, ease: "easeOut" }}
-                                    >
+                                    viewport={{ once: true }}>
                                     <img style={styles.html} src={html} alt='html'/>
                                 </motion.div>
                                 <motion.div
                                    initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with HTML5</p>
                                 </motion.div>
                             </div>
@@ -81,13 +84,15 @@ const About = () => {
                                 <motion.div
                                    initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <img style={styles.css} src={css} alt='css'/>
                                 </motion.div>
                                 <motion.div
                                    initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with CSS</p>
                                 </motion.div>
                             </div>
@@ -95,27 +100,31 @@ const About = () => {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <img style={styles.js} src={js} alt='javascript'/>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with Javascript</p>
                                 </motion.div>
                             </div>
                             <div style={styles.nodeBlock}>
                                 <motion.div
-                                        initial={{ opacity: 0, y: 50 }}
+                                    initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <img style={styles.node} src={nodejs} alt='nodejs'/>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }} >
+                                    transition={{ duration: 0.8, ease: "easeOut" }} 
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with NodeJs</p>
                                 </motion.div>
                             </div>
@@ -123,13 +132,15 @@ const About = () => {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <img style={styles.react} src={react} alt='react'/>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with React</p>
                                 </motion.div>
                             </div>
@@ -137,13 +148,15 @@ const About = () => {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <img style={styles.mongo} src={mongo} alt='mongodb'/>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <p>3 years of experience working with MongoDb</p>
                                 </motion.div>
                             </div>
@@ -151,13 +164,15 @@ const About = () => {
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <img style={styles.figma} src={figma} alt='figma'/>
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, y: 50 }}
                                     whileInView={{ opacity: 1, y: 0 }}
-                                    transition={{ duration: 0.8, ease: "easeOut" }}>
+                                    transition={{ duration: 0.8, ease: "easeOut" }}
+                                    viewport={{ once: true }}>
                                     <p>3 years designing websites and apps with Figma</p>
                                 </motion.div>
                             </div>
