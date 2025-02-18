@@ -1,11 +1,11 @@
-import React,{ useRef } from 'react';
+import { React, useRef } from 'react';
 import asteroid from '../videos/asteroids.mp4';
 import cryptoWatch from '../videos/cryptoWatch.mp4';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import './hScroll.css';
 
-const videoDisplay = () => {
-    const targetRef = useRef(null);
+const VideoDisplay = () => {
+    const targetRef = useRef();
     const { scrollYProgress } = useScroll({target:targetRef});
     const x = useTransform(scrollYProgress, [0, 1], ['0%', '55%']);
 
@@ -34,4 +34,4 @@ const videoDisplay = () => {
   )
 }
 
-export default videoDisplay;
+export default VideoDisplay;
