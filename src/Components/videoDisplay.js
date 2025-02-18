@@ -32,13 +32,10 @@ const styles = {
         flexDirection: 'column',
         alignItems: 'center',
         overflow: 'hidden',
-        position: 'sticky',
-        top: 0
     },
     asteroid:{
         marginTop: '9%',
         height: 'auto',
-        width: '80%',
         width: '80%',
         marginLeft: '10%'
     },
