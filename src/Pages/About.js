@@ -11,7 +11,7 @@ import react from '../images/physics.png';
 import mongo from '../images/mongodb.svg';
 import galaxyBg from '../images/galaxyBg.jpg'
 import spaceBgProject from '../images/spaceBgProject.jpg';
-import Video from '../Components/videoDisplay';
+//import Video from '../Components/videoDisplay';
 import github from '../images/github.png';
 import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
@@ -21,6 +21,7 @@ import '../Pages/About.css';
 import { useInView } from 'react-intersection-observer';
 import { useRef } from "react";
 //import HorizontalScroll from '../Components/horizontalScroll';
+import EmblaCarousel from '../Components/emblaCarousel';
 
 const About = () => {
     const ref = useRef(null);
@@ -182,7 +183,7 @@ const About = () => {
         <div>
              <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBgProject})`}} >
                     <div className='video'>
-                        <Video/>
+                        <EmblaCarousel/>
                     </div>
             </div>
         </div>
