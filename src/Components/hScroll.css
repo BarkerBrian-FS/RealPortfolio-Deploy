@@ -45,3 +45,50 @@
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
+
+
+/* Phone - Below 600px */
+@media (max-width: 600px) {
+    .carousel__container {
+        flex-direction: column; /* Stack videos vertically */
+    }
+  
+    .carousel__item {
+        flex-direction: column; /* Stack videos vertically */
+        width: 100%; /* Take full width */
+    }
+  
+    .carousel__video {
+        width: 100%; /* Make videos responsive to phone width */
+        margin-bottom: 20px;
+    }
+  
+    .carousel__title {
+        font-size: 18px; /* Smaller font size for mobile screens */
+        text-align: center;
+        margin-bottom: 10px;
+    }
+  }
+  
+  /* Tablet - 600px to 1024px */
+  @media (max-width: 1024px) and (min-width: 601px) {
+    .carousel__container {
+        flex-direction: row; /* Keep videos in a row, but make them more compact */
+    }
+  
+    .carousel__item {
+        width: 80%; /* Make carousel items take up most of the screen */
+        justify-content: center;
+    }
+  
+    .carousel__video {
+        width: 45%; /* Slightly smaller videos on tablets */
+        margin: 10px; /* Add margin between videos */
+    }
+  
+    .carousel__title {
+        font-size: 22px; /* Adjust title size for tablet screens */
+        text-align: center;
+        margin-bottom: 15px;
+    }
+  }
