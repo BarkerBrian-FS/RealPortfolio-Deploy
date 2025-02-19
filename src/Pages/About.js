@@ -20,8 +20,8 @@ import { motion } from 'framer-motion';
 import '../Pages/About.css';
 import { useInView } from 'react-intersection-observer';
 import { useRef } from "react";
-//import HorizontalScroll from '../Components/horizontalScroll';
 import EmblaCarousel from '../Components/emblaCarousel';
+import './About.css';
 
 const About = () => {
     const ref = useRef(null);
