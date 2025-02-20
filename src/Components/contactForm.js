@@ -31,7 +31,7 @@ export const ContactForm = () => {
   };
 
   return (
-      <div class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2}),`}}>
+      <div className='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2})`}}>
         <form ref={form} onSubmit={sendEmail} style={style.form}>
           <div style= {style.name}>
             <label>Name</label>
@@ -49,6 +49,7 @@ export const ContactForm = () => {
           </div>
           <div>
             <motion.button
+            initial={{ backgroundColor: 'white',color: 'black',borderColor: 'black' }}
             whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }}
             whileTap={{ scale: 0.9 }}
             type="submit" style={style.input}>Send</motion.button>
@@ -68,12 +69,11 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     marginLeft: '570px',
-    marginTop: '100px',
     borderRadius: '3px',
     height: '600px'
   },
   name:{
-    marginTop: '60px',
+    marginTop: '120px',
     color: 'white'
   },
   email:{

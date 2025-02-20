@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
-
+.videoBg {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .embla {
     max-width: 60rem;
     margin: auto;

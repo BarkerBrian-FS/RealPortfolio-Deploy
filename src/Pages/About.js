@@ -1,12 +1,11 @@
 import React from 'react';
 import Nav from '../Components/topNav';
-import spaceBgProject from '../images/spaceBgProject.jpg';
 import ContactForm from '../Components/contactForm'
-import spaceBg2 from '../images/spaceBg2.jpg'
 import '../Pages/About.css';
 import EmblaCarousel from '../Components/emblaCarousel';
 import AboutMe from  '../Components/AboutMe';
 import Experience from '../Components/Experience';
+
 const About = () => {
     return(
     <>

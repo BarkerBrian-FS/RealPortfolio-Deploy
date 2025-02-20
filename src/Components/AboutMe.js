@@ -26,10 +26,10 @@ const AboutMe = () => {
             </div>
             <motion.div
                 ref={ref} // Set the ref for intersection observer
-                initial={{ x: '100vw' }} // Start off-screen to right side
-                animate={{ x: isInView ? 0 : '-10vw' }} // Move to the normal position when in view
+                initial={{ scale: .025 }} // Start off-screen to right side
+                animate={{ scale: 1 }} // Move to the normal position when in view
                 //spring animation at the end of movement 
-                transition={{ type: 'spring', stiffness: 100, damping: 50 }}
+                transition={{ type: 'spring', stiffness: 60, damping: 50 }}
                 viewport={{ once: true }}>
                 <img src={me} alt='me' style={styles.img}/>
             </motion.div>

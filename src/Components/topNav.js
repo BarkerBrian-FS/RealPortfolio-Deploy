@@ -11,15 +11,18 @@ const Nav = () => {
             </div>
                 <nav className='navLink' style = {styles.nav} >
                     <motion.div
-                        whileHover={{ scale: 1.1 }}>
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}>
                         <li><a href="#experience" style={styles.link}>Experience</a></li>
                     </motion.div>
                     <motion.div
-                        whileHover={{ scale: 1.1 }}>
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}>
                         <li><a href="#projects" style={styles.link}>Projects</a></li>
                     </motion.div>
                     <motion.div
-                        whileHover={{ scale: 1.1 }}>
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}>
                         <li><a href="#contact" style={styles.link}>Contact</a></li>
                     </motion.div>
                  </nav>
