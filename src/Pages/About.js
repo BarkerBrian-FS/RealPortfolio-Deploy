@@ -1,41 +1,33 @@
 import React from 'react';
 import Nav from '../Components/topNav';
 import spaceBgProject from '../images/spaceBgProject.jpg';
-//import Video from '../Components/videoDisplay';
-import github from '../images/github.png';
-import linkedIn from '../images/linkedin.png';
 import ContactForm from '../Components/contactForm'
 import spaceBg2 from '../images/spaceBg2.jpg'
-import { motion } from 'framer-motion';
 import '../Pages/About.css';
 import EmblaCarousel from '../Components/emblaCarousel';
 import AboutMe from  '../Components/AboutMe';
 import Experience from '../Components/Experience';
-import ContactButtons from '../Components/ContactButtons';
 const About = () => {
     return(
     <>
-        <div>
+        <div id = 'Nav'>
             <Nav/>
         </div>
-        <div>
+        <div id = 'About'>
             <AboutMe/>
         </div>
-        <div>
+        <div id = 'Experience'>
             <Experience/>            
         </div>
-        <div id='projects' class='space' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBgProject})`}} >
+        <div id='projects'>
             <div className='video'>
                 <EmblaCarousel/>
             </div>
         </div>
         <div>
-            <div id='contact' class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2})`}} >
+            <div id='contact' >
                 <div>
                     <ContactForm/>
-                </div>
-                <div>
-                    <ContactButtons/>
                 </div>
             </div>
         </div>

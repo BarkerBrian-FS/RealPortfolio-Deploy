@@ -135,38 +135,6 @@ const Experience = () => {
 export default Experience
 
 const styles={
-    about:{
-      display: 'flex',
-      flexDirection: 'row',
-  },
-  img:{
-      height: '950px',
-      width: 'auto',
-      marginTop: '6rem',
-      marginRight: '-20rem',
-  },
-  name:{
-      color: 'white',
-      fontFamily: 'Anta, sans-serif',
-      fontWeight: 'bold',
-      fontStyle: 'normal',
-      fontSize: '4rem',
-      marginLeft: '20rem',
-      marginTop: '6rem'
-  },
-  para:{
-      fontFamily: 'Anta, sans-serif',
-      fontWeight: 400,
-      fontStyle: 'normal',
-      fontSize: '1.5rem',
-      color:'white',
-      marginTop: '-2rem',
-      marginLeft: '20rem',
-      marginRight: '10rem'
-  },
-  Nav:{
-      zIndex: 98
-  },
   experience:{
       display: 'flex',
       flexDirection: 'column',
@@ -272,29 +240,6 @@ const styles={
       display: 'flex',
       flexDirection: 'row',
       marginRight: '200px'
-  },
-  github:{
-      height: '105px',
-      width: '105px',
-      marginRight: '10px',
-      backgroundColor: 'white',
-      borderRadius: '20%'
-  },
-  linkedIn:{
-      height: '105px',
-      width: '105px',
-      marginLeft: '10px'
-  },
-  contactForm:{
-
-  },
-  contactBtn:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginLeft: '43%',
-      marginRight: 'auto',
-      marginTop: '40px',
-      justifyContent: 'spaceBetween',
   },
   
 }

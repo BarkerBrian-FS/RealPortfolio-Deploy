@@ -2,6 +2,9 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from 'framer-motion';
 import buttonPicture from '../images/buttonPicture.jpg';
+import spaceBg2 from '../images/spaceBg2.jpg';
+import './Contact.css';
+import ContactButtons from './ContactButtons';
 export const ContactForm = () => {
   const form = useRef();
 
@@ -28,28 +31,33 @@ export const ContactForm = () => {
   };
 
   return (
-      <form ref={form} onSubmit={sendEmail} style={style.form}>
-        <div style= {style.name}>
-          <label>Name</label>
-          <div><input type="text" name="user_name" /></div>
-        </div>
-        <div style= {style.email}>
-          <label>Email</label>
-          <div><input type="email" name="user_email" /></div>
-        </div>
-        <div style= {style.message}>
-          <div>
-            <label>Message</label>
+      <div class='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2}),`}}>
+        <form ref={form} onSubmit={sendEmail} style={style.form}>
+          <div style= {style.name}>
+            <label>Name</label>
+            <div><input type="text" name="user_name" /></div>
           </div>
-            <textarea name="message" />
-        </div>
+          <div style= {style.email}>
+            <label>Email</label>
+            <div><input type="email" name="user_email" /></div>
+          </div>
+          <div style= {style.message}>
+            <div>
+              <label>Message</label>
+            </div>
+              <textarea name="message" />
+          </div>
+          <div>
+            <motion.button
+            whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }}
+            whileTap={{ scale: 0.9 }}
+            type="submit" style={style.input}>Send</motion.button>
+          </div>
+        </form>
         <div>
-          <motion.button 
-          whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }}
-          whileTap={{ scale: 0.9 }} 
-          type="submit" style={style.input}>Send</motion.button>
+          <ContactButtons/>
         </div>
-      </form>
+      </div>
   );
 };
 

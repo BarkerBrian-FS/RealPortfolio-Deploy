@@ -25,10 +25,6 @@ const AboutMe = () => {
                 </motion.div>
             </div>
             <motion.div
-                /*animate={{ x:-100 }}
-                transition={{ ease: "easeOut", duration: 3 }}
-                initial={{ scale: .5 }}
-                whileInView={{ scale: 1.1, }}*/
                 ref={ref} // Set the ref for intersection observer
                 initial={{ x: '100vw' }} // Start off-screen to right side
                 animate={{ x: isInView ? 0 : '-10vw' }} // Move to the normal position when in view
