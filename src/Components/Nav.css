@@ -1,2 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) and (min-width: 769px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .navLink {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navLink a {
+        font-size: 1.25rem;
+    }
+}
+
+/* Phone (max-width: 768px) */
+@media (max-width: 768px) and (min-width: 601px) {
+    header {
+        padding: 2%;
+    }
+
+    .logo h1 {
+        font-size: 1.3rem;
+    }
+
+    .navLink {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navLink a {
+        font-size: 1.1rem;
+    }
+}

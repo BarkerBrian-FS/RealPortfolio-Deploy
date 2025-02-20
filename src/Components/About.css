@@ -1,5 +1,55 @@
-/* Tablet (max-width: 768px) */
-@media (max-width: 768px) and (min-width: 601px) {
+
+@media (max-width: 1024px) and (min-width: 769px) { /* Tablet */
+  .about {
+    flex-direction: 'column';
+    text-align: 'center';
+  }
+  .name {
+    font-size: '3rem';
+    margin-left: '0';
+    margin-top: '2rem';
+  }
+  .para {
+    font-size: '1.25rem';
+    margin-left: '2rem';
+    margin-right: '2rem';
+  }
+  .img {
+    height: '500px';
+    margin-top: '2rem';
+  }
+}
+@media (max-width: 768px) and (min-width: 601px) { /* // Phone */
+  .about {
+    flex-direction: 'column';
+    text-align: 'center';
+  }
+  .name {
+    font-size: '2.5rem';
+    margin-left: '0';
+    margin-top: '1.5rem';
+  }
+  .para {
+    font-size: '1rem';
+    margin-left: '1rem';
+    margin-right: '1rem'
+  }
+  .img {
+    height: '400px';
+    margin-top: '1rem';
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Tablet (max-width: 768px) 
+@media (max-width: 1024px) and (min-width: 768px) {
     .about-container {
       flex-direction: column;
       text-align: center;
@@ -19,8 +69,8 @@
     }
   }
   
-  /* Phone (max-width: 600px) */
-  @media (max-width: 600px) {
+   Phone (max-width: 600px) 
+  @media (max-width: 768px) and (min-width: 601px) {
     #about {
       padding: 3rem 1rem;
     }
@@ -32,4 +82,4 @@
     .about-text {
       font-size: 0.9rem;
     }
-  }
+  }*/

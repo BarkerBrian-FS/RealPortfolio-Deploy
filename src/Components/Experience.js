@@ -8,6 +8,7 @@ import html from '../images/html.png';
 import react from '../images/physics.png';
 import mongo from '../images/mongodb.svg';
 import galaxyBg from '../images/galaxyBg.jpg'
+import './Experience.css';
 
 const Experience = () => {
   return (
@@ -131,6 +132,39 @@ const Experience = () => {
         </div>
   )
 }
+/*const skills = [
+    { img: html, text: "3 years of experience working with HTML5" },
+    { img: css, text: "3 years of experience working with CSS" },
+    { img: js, text: "3 years of experience working with JavaScript" },
+    { img: nodejs, text: "3 years of experience working with Node.js" },
+    { img: react, text: "3 years of experience working with React" },
+    { img: mongo, text: "3 years of experience working with MongoDB" },
+    { img: figma, text: "3 years designing websites and apps with Figma" }
+];
+
+const Experience = () => {
+    return (
+        <div id='experience' className='rocketBg' style={{ backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})` }}>
+            <div className="experience">
+                {skills.map((skill, index) => (
+                    <motion.div 
+                        key={index} 
+                        className="exp-block"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                    >
+                        <img src={skill.img} alt="skill" />
+                        <p>{skill.text}</p>
+                    </motion.div>
+                ))}
+            </div>
+        </div>
+    );
+};
+
+export default Experience;*/
 
 export default Experience
 
@@ -240,6 +274,5 @@ const styles={
       display: 'flex',
       flexDirection: 'row',
       marginRight: '200px'
-  },
-  
+  }
 }
