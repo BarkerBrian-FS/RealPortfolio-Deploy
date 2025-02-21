@@ -6,26 +6,26 @@ const Nav = () => {
     return(
         <>
         <header style = {styles.myHeader}>
-            <div  style = {styles.logo} >
+            <div className='logo'  style = {styles.logo} >
                 <h1 >Portfolio</h1>
             </div>
-                <nav className='navLink' style = {styles.nav} >
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}>
-                        <li><a href="#experience" style={styles.link}>Experience</a></li>
-                    </motion.div>
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}>
-                        <li><a href="#projects" style={styles.link}>Projects</a></li>
-                    </motion.div>
-                    <motion.div
-                        whileHover={{ scale: 1.1 }}
-                        whileTap={{ scale: 0.9 }}>
-                        <li><a href="#contact" style={styles.link}>Contact</a></li>
-                    </motion.div>
-                 </nav>
+                    <nav className='navLink' style = {styles.nav} >
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}>
+                            <li><a href="#experience" style={styles.link}>Experience</a></li>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}>
+                            <li><a href="#projects" style={styles.link}>Projects</a></li>
+                        </motion.div>
+                        <motion.div
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}>
+                            <li><a href="#contact" style={styles.link}>Contact</a></li>
+                        </motion.div>
+                     </nav>
         </header>
         </>
     );

@@ -7,7 +7,7 @@ const AboutMe = () => {
   return (
     <>
     <div className='body-space' style = {styles.bodySpace}>
-        <div class='bg' style={{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spacebg})`}}>
+        <div className='bg' style={{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spacebg})`}}>
         <div style={styles.about}>
             <div style={styles.intro}>
                 <motion.div
@@ -28,7 +28,7 @@ const AboutMe = () => {
                 //spring animation at the end of movement 
                 transition={{ type: 'spring', stiffness: 60, damping: 50 }}
                 viewport={{ once: true }}>
-                <img src={me} alt='me' style={styles.img}/>
+                <img className='img' src={me} alt='me' style={styles.img}/>
             </motion.div>
         </div>
         </div>
