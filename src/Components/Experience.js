@@ -10,129 +10,7 @@ import mongo from '../images/mongodb.svg';
 import galaxyBg from '../images/galaxyBg.jpg'
 import './Experience.css';
 
-const Experience = () => {
-  return (
-    <div>
-        <div id='experience' class='rocketBg' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})`}} >
-                    <div style={styles.experience}>
-                        <div style= {styles.htmlBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                <img style={styles.html} src={html} alt='html'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with HTML5</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.cssBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <img style={styles.css} src={css} alt='css'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with CSS</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.jsBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <img style={styles.js} src={js} alt='javascript'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with Javascript</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.nodeBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <img style={styles.node} src={nodejs} alt='nodejs'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }} 
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with NodeJs</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.reactBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <img style={styles.react} src={react} alt='react'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with React</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.mongoBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <img style={styles.mongo} src={mongo} alt='mongodb'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <p>3 years of experience working with MongoDb</p>
-                            </motion.div>
-                        </div>
-                        <div style={styles.figmaBlock}>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <img style={styles.figma} src={figma} alt='figma'/>
-                            </motion.div>
-                            <motion.div
-                                initial={{ opacity: 0, y: 50 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.8, ease: "easeOut" }}
-                                viewport={{ once: true }}>
-                                    <p>3 years designing websites and apps with Figma</p>
-                            </motion.div>
-                        </div>
-                    </div>
-            </div>
-        </div>
-  )
-}
-/*const skills = [
+const skills = [
     { img: html, text: "3 years of experience working with HTML5" },
     { img: css, text: "3 years of experience working with CSS" },
     { img: js, text: "3 years of experience working with JavaScript" },
@@ -145,7 +23,7 @@ const Experience = () => {
 const Experience = () => {
     return (
         <div id='experience' className='rocketBg' style={{ backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})` }}>
-            <div className="experience">
+            <div className="experience" style = {styles.experience}>
                 {skills.map((skill, index) => (
                     <motion.div 
                         key={index} 
@@ -155,8 +33,10 @@ const Experience = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >
-                        <img src={skill.img} alt="skill" />
-                        <p>{skill.text}</p>
+                        <div style = {styles.expBlock}>
+                            <img src={skill.img} alt="skill" style={styles.logo}/>
+                            <p style={styles.text}>{skill.text}</p>
+                        </div>
                     </motion.div>
                 ))}
             </div>
@@ -164,115 +44,37 @@ const Experience = () => {
     );
 };
 
-export default Experience;*/
+export default Experience;
 
-export default Experience
 
 const styles={
   experience:{
       display: 'flex',
       flexDirection: 'column',
-      marginTop: '60px',
-      marginLeft: '400px',
+      justifyContent: 'flexStart',
+      height: '60%',
+      flexWrap: 'wrap',
+      marginLeft: '200px',
   },
-  html:{
-      height: '120px',
-      width: '120px',
+  expBlock:{
       display: 'flex',
       flexDirection: 'row',
-      justifyContent: 'space-between',
-      marginRight: '200px'
+      marginTop: '30px',
+      marginBottom: '30px',
   },
-  htmlBlock:{
+  logo:{
+      height: '100px',
+      width: '100px',
+      display: 'flex',
+  },
+  text:{
+      fontFamily: 'Anta, sans-serif',
       display: 'flex',
       flexDirection: 'row',
       marginTop: '30px',
       marginBottom: '30px',
       fontSize: '1.5rem',
-      color: 'white'
+      color: 'white',
+      marginLeft: '3rem',
   },
-  css:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  },
-  cssBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  js:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  },
-  jsBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  nodeBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  node:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  },
-  reactBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  react:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  },
-  mongoBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  mongo:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  },
-  figmaBlock:{
-      display: 'flex',
-      flexDirection: 'row',
-      marginBottom: '30px',
-      fontSize: '1.5rem',
-      color: 'white'
-  },
-  figma:{
-      height: '120px',
-      width: '120px',
-      display: 'flex',
-      flexDirection: 'row',
-      marginRight: '200px'
-  }
 }
