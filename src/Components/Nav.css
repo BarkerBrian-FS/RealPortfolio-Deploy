@@ -29,15 +29,14 @@
     }
 
     .logo h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .navLink {
-        font-size: .75rem;
+        font-size: .20rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 5px;
-        
     }
 }

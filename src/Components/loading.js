@@ -24,7 +24,7 @@ const LoadingScreen = () => {
   
     return (
       isLoading && (
-        <div className="loading-screen" style={style.loadingScreen}>
+        <div className="loading" style={style.loadingScreen}>
           <Lottie options={defaultOptions} height={950} width={950} />
         </div>
       )
@@ -38,7 +38,6 @@ const style = {
     backgroundImage: `url(${LogoBackground})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    
   }
 
 }

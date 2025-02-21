@@ -1,6 +1,23 @@
-@media (max-width: 1024px) and (min-width: 769px) { /* Tablet */
-   
-}
-@media (max-width: 768px) and (min-width: 601px) { /* // Phone */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .loading {
+      background-size: contain;
+    }
   
-}
+    .loading lottie-player {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
+  /* Mobile (max-width: 768px) */
+  @media screen and (max-width: 768px) and (min-width: 601px) {
+    .loading {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .loading lottie-player {
+      width: 180px;
+      height: 180px;
+    }
+  }
