@@ -1,16 +1,16 @@
-import React from 'react'
-import useEmblaCarousel from 'embla-carousel-react'
-import Fade from 'embla-carousel-fade'
+import React from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import Fade from 'embla-carousel-fade';
 import {
   NextButton,
   PrevButton,
   usePrevNextButtons
-} from './emblaCarouselArrowButtons'
-import cryptoWatch from '../videos/cryptoWatch.mp4'
-import asteroids from '../videos/asteroids.mp4'
-import './emblaCarousel.css'
-import spaceBgProject from '../images/spaceBgProject.jpg'
-import { motion } from 'framer-motion'
+} from './emblaCarouselArrowButtons';
+import cryptoWatch from '../videos/cryptoWatch.mp4';
+import asteroids from '../videos/asteroids.mp4';
+import './emblaCarousel.css';
+import spaceBgProject from '../images/spaceBgProject.jpg';
+import { motion } from 'framer-motion';
 
 
 const EmblaCarousel = (props) => {

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { motion } from 'framer-motion';
 import figma from '../images/figma.png';
 import css from '../images/css.png';
@@ -7,7 +7,7 @@ import nodejs from '../images/nodejs.png';
 import html from '../images/html.png';
 import react from '../images/physics.png';
 import mongo from '../images/mongodb.svg';
-import galaxyBg from '../images/galaxyBg.jpg'
+import galaxyBg from '../images/galaxyBg.jpg';
 import './Experience.css';
 
 const skills = [
@@ -52,14 +52,15 @@ const styles={
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'flexStart',
-      height: '60%',
+      height: '80%',
+      marginTop: '60px',
       flexWrap: 'wrap',
       marginLeft: '200px',
   },
   expBlock:{
       display: 'flex',
       flexDirection: 'row',
-      marginTop: '30px',
+      marginTop: '80px',
       marginBottom: '30px',
   },
   logo:{

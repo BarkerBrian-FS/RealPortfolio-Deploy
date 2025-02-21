@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Lottie from 'react-lottie';
 import animationData from '../videos/SpinninLogo.json';
 import LogoBackground from '../images/LogoBackground.jpg';
+import './Loading.css';
 const LoadingScreen = () => {
     const [isLoading, setIsLoading] = useState(true);
   

@@ -1,3 +1,10 @@
+.bg{
+  height: 750px
+}
+.rocketBg{
+  height: 1075px;
+  background-size: cover;
+}
 
 @media (max-width: 1024px) and (min-width: 769px) { /* Tablet */
   .about {

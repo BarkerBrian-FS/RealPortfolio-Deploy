@@ -1,5 +1,5 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { motion } from 'framer-motion';
 import me from '../images/AboutBrian.png';
 import spacebg from '../images/spacebg.jpg';
 import './About.css';
@@ -68,5 +68,11 @@ const styles = {
       marginTop: '-2rem',
       marginLeft: '20rem',
       marginRight: '10rem'
+  },
+  bodySpace:{
+    width: '100%',
+    height: '100%',
+    overflowX: 'hidden',
+    overflowY: 'hidden'
   }
 }
