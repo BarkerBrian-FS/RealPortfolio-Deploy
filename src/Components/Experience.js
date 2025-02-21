@@ -34,8 +34,8 @@ const Experience = () => {
                         viewport={{ once: true }}
                     >
                         <div style = {styles.expBlock}>
-                            <img src={skill.img} alt="skill" style={styles.logo}/>
-                            <p style={styles.text}>{skill.text}</p>
+                            <img className='expLogo' src={skill.img} alt="skill" style={styles.logo}/>
+                            <p className='expText' style={styles.text}>{skill.text}</p>
                         </div>
                     </motion.div>
                 ))}

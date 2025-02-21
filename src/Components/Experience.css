@@ -3,7 +3,12 @@
 
   }
 @media (max-width: 768px) and (min-width: 601px) { /* // Phone */
-   
+   .expLogo{
+    height: 20px;
+   }
+   .expText{
+    font-size: 1rem;
+   }
   }
   
   
