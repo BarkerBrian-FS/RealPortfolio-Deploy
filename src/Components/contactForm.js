@@ -5,6 +5,7 @@ import buttonPicture from '../images/buttonPicture.jpg';
 import spaceBg2 from '../images/spaceBg2.jpg';
 import './Contact.css';
 import ContactButtons from './ContactButtons';
+
 export const ContactForm = () => {
   const form = useRef();
 
@@ -32,30 +33,31 @@ export const ContactForm = () => {
 
   return (
       <div className='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2})`}}>
-        <form ref={form} onSubmit={sendEmail} style={style.form}>
-          <div style= {style.name}>
+        <form ref={form} onSubmit={sendEmail} style={style.form} className='contact-form'>
+          <div style= {style.name} className='name'>
             <label>Name</label>
             <div><input type="text" name="user_name" /></div>
           </div>
-          <div style= {style.email}>
+          <div style= {style.email} className='email'>
             <label>Email</label>
             <div><input type="email" name="user_email" /></div>
           </div>
-          <div style= {style.message}>
+          <div style= {style.message}className='message'>
             <div>
               <label>Message</label>
             </div>
               <textarea name="message" />
           </div>
-          <div>
+          <div className='submit'>
             <motion.button
             initial={{ backgroundColor: 'white',color: 'black',borderColor: 'black' }}
             whileHover={{ scale: 1.1, backgroundImage: `url(${buttonPicture})`,color: 'white',borderColor: 'white' }}
             whileTap={{ scale: 0.9 }}
+            
             type="submit" style={style.input}>Send</motion.button>
           </div>
         </form>
-        <div>
+        <div className='contact-buttons'>
           <ContactButtons/>
         </div>
       </div>
@@ -68,7 +70,7 @@ const style = {
   form:{
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: '570px',
+    marginLeft: '35rem',
     borderRadius: '3px',
     height: '600px'
   },

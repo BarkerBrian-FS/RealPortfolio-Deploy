@@ -47,7 +47,8 @@ const EmblaCarousel = (props) => {
             <div className="embla__buttons">
               <motion.div
               whileHover={{ scale: 1.1}}
-              whileTap={{ scale: 0.9 }}>
+              whileTap={{ scale: 0.9 }}
+              className='prevButton'>
                 <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
               </motion.div>
               <motion.div

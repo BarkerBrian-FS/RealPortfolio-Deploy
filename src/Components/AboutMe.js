@@ -1,9 +1,77 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import me from '../images/AboutBrian.png';
 import spacebg from '../images/spacebg.jpg';
 import './About.css';
 const AboutMe = () => {
+
+    /*const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024);
+    const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024 && window.innerWidth < 1440);
+    const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1440);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 768);
+            setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+            setIsDesktop(window.innerWidth >= 1024 && window.innerWidth < 1440);
+            setIsLargeScreen(window.innerWidth >= 1440);
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    const styles = {
+        about: {
+            display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: 'center',
+            textAlign: isMobile ? 'center' : 'left',
+            maxWidth: isLargeScreen ? '100%' : '100%',
+            margin: isLargeScreen ? '0 auto' : '0',
+        },
+        img: {
+            height: isMobile ? '300px' 
+                : isTablet ? '600px' 
+                : isDesktop ? '950px' 
+                : '950px', // Large screen image height
+            width: 'auto',
+            marginTop: isMobile ? '2rem' : '6rem',
+            marginLeft: isMobile ? '0',
+            marginRight: isMobile ? '0' : isLargeScreen ? '-15rem' : '-10rem',
+        },
+        name: {
+            color: 'white',
+            fontFamily: 'Anta, sans-serif',
+            fontWeight: 'bold',
+            fontStyle: 'normal',
+            fontSize: isMobile ? '2rem' 
+                : isTablet ? '3rem' 
+                : isDesktop ? '4rem' 
+                : '5rem', // Large screen font size
+            marginLeft: isMobile ? '0' : isLargeScreen ? '18rem' : '30rem',
+            marginTop: isMobile ? '0rem' : '-20rem'
+        },
+        para: {
+            fontFamily: 'Anta, sans-serif',
+            fontWeight: 400,
+            fontStyle: 'normal',
+            fontSize: isMobile ? '1.2rem' 
+                : isTablet ? '1.2rem' 
+                : isDesktop ? '1.5rem' 
+                : '1.8rem', // Larger text for large screens
+            color: 'white',
+            margin: isMobile ? '1rem' : isLargeScreen ? '0rem 20rem -2rem 10rem' : '0rem 20rem -2rem 10rem',
+            maxWidth: isLargeScreen ? '70%' : '100%',
+        },
+        bodySpace: {
+            width: '100%',
+            height: '100%',
+            overflowX: 'hidden',
+            overflowY: 'hidden',
+        }
+    };*/
+
   return (
     <>
     <div className='body-space' style = {styles.bodySpace}>
@@ -75,4 +143,5 @@ const styles = {
     overflowX: 'hidden',
     overflowY: 'hidden'
   }
+
 }
