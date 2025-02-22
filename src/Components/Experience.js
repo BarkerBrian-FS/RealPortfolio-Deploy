@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import figma from '../images/figma.png';
 import css from '../images/css.png';
@@ -21,6 +21,7 @@ const skills = [
 ];
 
 const Experience = () => {
+
     return (
         <div id='experience' className='rocketBg' style={{ backgroundImage: `radial-gradient(transparent 40%, black 72%),linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(${galaxyBg})` }}>
             <div className="experience" style = {styles.experience}>
@@ -28,8 +29,8 @@ const Experience = () => {
                     <motion.div 
                         key={index} 
                         className="exp-block"
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >

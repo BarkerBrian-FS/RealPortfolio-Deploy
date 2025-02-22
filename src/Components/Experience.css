@@ -31,17 +31,18 @@
   .exp-block {
     flex-direction: column;
     text-align: center;
+    margin-top: 1rem;
   }
 
   .expLogo {
-    height: 60px;
-    width: 60px;
+    height: 2rem;
+    width: 2rem;
   }
 
   .expText {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 0;
-    margin-top: 10px;
+    margin-top: 5px;
   }
 }
   
