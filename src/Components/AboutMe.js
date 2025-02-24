@@ -5,7 +5,7 @@ import spacebg from '../images/spacebg.jpg';
 import './About.css';
 const AboutMe = () => {
 
-    /*const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
     const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024 && window.innerWidth < 1440);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1440);
@@ -24,33 +24,33 @@ const AboutMe = () => {
     const styles = {
         about: {
             display: 'flex',
-            flexDirection: isMobile ? 'column' : 'row',
+            flexDirection: isMobile ? 'row' : 'row',
             alignItems: 'center',
             textAlign: isMobile ? 'center' : 'left',
             maxWidth: isLargeScreen ? '100%' : '100%',
             margin: isLargeScreen ? '0 auto' : '0',
         },
         img: {
-            height: isMobile ? '300px' 
+            height: isMobile ? '550px' 
                 : isTablet ? '600px' 
                 : isDesktop ? '950px' 
                 : '950px', // Large screen image height
             width: 'auto',
-            marginTop: isMobile ? '2rem' : '6rem',
-            marginLeft: isMobile ? '0',
-            marginRight: isMobile ? '0' : isLargeScreen ? '-15rem' : '-10rem',
+            marginTop: isMobile ? '15rem': isLargeScreen ? '8rem' : '0rem',
+            marginLeft: isMobile ? '10rem' : '10rem',
+            marginRight: isMobile ? '-10rem' : isLargeScreen ? '-10rem' : '10rem',
         },
         name: {
             color: 'white',
             fontFamily: 'Anta, sans-serif',
             fontWeight: 'bold',
             fontStyle: 'normal',
-            fontSize: isMobile ? '2rem' 
+            fontSize: isMobile ? '2.5rem' 
                 : isTablet ? '3rem' 
                 : isDesktop ? '4rem' 
                 : '5rem', // Large screen font size
-            marginLeft: isMobile ? '0' : isLargeScreen ? '18rem' : '30rem',
-            marginTop: isMobile ? '0rem' : '-20rem'
+            marginLeft: isMobile ? '0rem': '10rem',
+            marginTop: isMobile ? '5rem' : isLargeScreen ? '-8rem' : '20rem',
         },
         para: {
             fontFamily: 'Anta, sans-serif',
@@ -61,7 +61,9 @@ const AboutMe = () => {
                 : isDesktop ? '1.5rem' 
                 : '1.8rem', // Larger text for large screens
             color: 'white',
-            margin: isMobile ? '1rem' : isLargeScreen ? '0rem 20rem -2rem 10rem' : '0rem 20rem -2rem 10rem',
+            margin: isMobile ? '0rem' : isLargeScreen ? '0rem 20rem -2rem 10rem' : '0rem 20rem -2rem 10rem',
+            marginRight: isMobile ? '-5rem' : isLargeScreen ? '-10rem' : '10rem',
+            marginBottom: isMobile ? '2rem' : '10rem',
             maxWidth: isLargeScreen ? '70%' : '100%',
         },
         bodySpace: {
@@ -70,7 +72,7 @@ const AboutMe = () => {
             overflowX: 'hidden',
             overflowY: 'hidden',
         }
-    };*/
+    };
 
   return (
     <>
@@ -145,3 +147,4 @@ const styles = {
   }
 
 }
+
