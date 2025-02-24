@@ -39,6 +39,13 @@ const Experience = () => {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    // Framer Motion Variants
+    const variants = {
+        desktop: { opacity: 1, y: 0, scale: 1 },
+        tablet: { opacity: 1, y: 20, scale: 0.95 },
+        mobile: { opacity: 1, y: 30, scale: 0.9 },
+    };
+
     return (
         <div 
             id='experience' 
@@ -55,8 +62,8 @@ const Experience = () => {
                         key={index} 
                         className="exp-block"
                         initial={{ opacity: 0, y: 50 }}
-                        animate={[screenSize]}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        animate={variants[screenSize]}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >
                         <div style={styles.expBlock(screenSize)}>
