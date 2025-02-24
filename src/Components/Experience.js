@@ -63,7 +63,7 @@ const Experience = () => {
                         className="exp-block"
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.7, ease: "easeOut", delay: index * 0.2 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
                         viewport={{ once: true }}>
                         <div style={styles.expBlock(screenSize)}>
                             <img 
