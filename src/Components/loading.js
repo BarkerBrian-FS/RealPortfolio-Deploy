@@ -25,7 +25,7 @@ const LoadingScreen = () => {
     return (
       isLoading && (
         <div className="loading" style={style.loadingScreen}>
-          <Lottie className="lottie" options={defaultOptions} height={800} width={800} />
+          <Lottie className="lottie" options={defaultOptions} height={900} width={900} />
         </div>
       )
     );
