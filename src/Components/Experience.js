@@ -63,7 +63,7 @@ const Experience = () => {
                         className="exp-block"
                         initial={{ opacity: 0, y: 50 }}
                         animate={variants[screenSize]}
-                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        transition={{ duration: 0.9, ease: "easeOut" }}
                         viewport={{ once: true }}
                     >
                         <div style={styles.expBlock(screenSize)}>
