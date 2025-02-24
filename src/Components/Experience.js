@@ -62,6 +62,7 @@ const Experience = () => {
                         key={index} 
                         className="exp-block"
                         initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
                         animate={variants[screenSize]}
                         transition={{ duration: 0.9, ease: "easeOut", delay: index * 0.2  }}
                         viewport={{ once: true }}
