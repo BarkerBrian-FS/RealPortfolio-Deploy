@@ -74,6 +74,39 @@
   margin-left: -4rem;
 }
 }
+
+@media screen and (max-width: 425px) {
+  .contact-form {
+    width: 80%; /* Make the form take most of the screen width */
+    margin: auto; /* Center the form */
+    height: auto; /* Adjust height dynamically */
+    padding: 20px;
+  }
+
+  .name,
+  .email,
+  .message {
+    margin-top: 10px; /* Reduce margin for smaller screens */
+    margin-left: -36rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 40%; /* Make inputs take full width */
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  .submit {
+    width: 50rem; /* Make button full width */
+    font-size: 1.2rem; /* Adjust font size */
+    margin-left: -37rem;
+    justify-content: center;
+  }
+  .contact-buttons{
+    margin-left: -9rem;
+    margin-top: 3rem;
+  }
+}
   
   
   
