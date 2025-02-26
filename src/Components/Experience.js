@@ -106,6 +106,7 @@ const styles = {
         flexWrap: 'wrap',
         textAlign: screenSize === "mobile" ? 'center' : 'left',
         maxWidth: '600px',
+       
     }),
     logo: (screenSize) => ({
         height: screenSize === "mobile" ? '60px' : screenSize === "tablet" ? '70px' : '100px',
