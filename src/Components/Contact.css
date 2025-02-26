@@ -6,6 +6,9 @@
 .label{
   font-family:'Anta', sans-serif; 
 }
+.contact-buttons{
+  margin-top: 5rem;
+}
 
 @media (max-width: 1024px) and (min-width: 769px) { /* Tablet */
 .contact-form{

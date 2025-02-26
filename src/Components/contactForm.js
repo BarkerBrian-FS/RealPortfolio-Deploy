@@ -75,8 +75,8 @@ const style = {
     height: '600px',
   },
   name:{
-    marginTop: '120px',
-    color: 'white'
+    marginTop: '160px',
+    color: 'white',
   },
   email:{
     marginTop: '15px',
