@@ -35,16 +35,16 @@ export const ContactForm = () => {
       <div className='spaceBg2' style= {{backgroundImage: `radial-gradient(transparent 40%, black 72%),url(${spaceBg2})`}}>
         <form ref={form} onSubmit={sendEmail} style={style.form} className='contact-form'>
           <div style= {style.name} className='name'>
-            <label>Name</label>
+            <label className='label'>Name</label>
             <div><input type="text" name="user_name" /></div>
           </div>
           <div style= {style.email} className='email'>
-            <label>Email</label>
+            <label className='label'>Email</label>
             <div><input type="email" name="user_email" /></div>
           </div>
           <div style= {style.message}className='message'>
             <div>
-              <label>Message</label>
+              <label className='label'>Message</label>
             </div>
               <textarea name="message" />
           </div>
@@ -70,9 +70,9 @@ const style = {
   form:{
     display: 'flex',
     flexDirection: 'column',
-    marginLeft: '35rem',
+    marginLeft: '36rem',
     borderRadius: '3px',
-    height: '600px'
+    height: '600px',
   },
   name:{
     marginTop: '120px',

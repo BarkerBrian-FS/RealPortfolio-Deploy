@@ -109,42 +109,4 @@ const AboutMe = () => {
 
 export default AboutMe
 
-const styles = {
-    about:{
-      display: 'flex',
-      flexDirection: 'row',
-  },
-  img:{
-      height: '950px',
-      width: 'auto',
-      marginTop: '6rem',
-      marginRight: '-10rem',
-  },
-  name:{
-      color: 'white',
-      fontFamily: 'Anta, sans-serif',
-      fontWeight: 'bold',
-      fontStyle: 'normal',
-      fontSize: '4rem',
-      marginLeft: '20rem',
-      marginTop: '6rem'
-  },
-  para:{
-      fontFamily: 'Anta, sans-serif',
-      fontWeight: 400,
-      fontStyle: 'normal',
-      fontSize: '1.5rem',
-      color:'white',
-      marginTop: '-2rem',
-      marginLeft: '20rem',
-      marginRight: '10rem'
-  },
-  bodySpace:{
-    width: '100%',
-    height: '100%',
-    overflowX: 'hidden',
-    overflowY: 'hidden'
-  }
-
-}
 

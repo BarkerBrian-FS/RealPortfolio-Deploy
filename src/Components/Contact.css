@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-.contact-form{
-  font-family:'Anta', sans-serif; ;
-}
+
 .spaceBg2{
     background-color: 100%;
+}
+.label{
+  font-family:'Anta', sans-serif; 
 }
 
 @media (max-width: 1024px) and (min-width: 769px) { /* Tablet */
@@ -27,6 +28,28 @@
   margin-left: -8rem;
 }
   }
+
+@media (max-width: 768px) and (min-width: 601px) { /* // tablet/Phone */
+.contact-form{
+  margin-top: 10px;
+  width: 60%;
+}
+.name{
+  margin-left: -22rem;
+}
+.email{
+  margin-left: -22rem;
+}
+.message{
+  margin-left: -22rem;
+}
+.submit{
+  margin-left: -22rem;
+}
+.contact-buttons{
+  margin-left: -4rem;
+}
+}
 @media (max-width: 768px) and (min-width: 601px) { /* // Phone */
 .contact-form{
   margin-top: 10px;
@@ -48,7 +71,6 @@
   margin-left: -4rem;
 }
 }
-  
   
   
   
