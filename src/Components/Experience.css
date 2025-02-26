@@ -1,3 +1,9 @@
+.rocketbg{
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* Tablet (max-width: 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
   .experience {
