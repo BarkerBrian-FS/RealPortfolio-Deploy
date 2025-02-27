@@ -36,28 +36,70 @@
         gap: 5px;
     }
 
-     a {
+    a {
         font-size: 1.25rem
     }
 }
 
-@media screen and (max-width: 425px) {
-    header {
-        padding: 1%;
+/* Greater than 426px (≥ 426px) */
+@media screen and (min-width: 426px) {
+    /* Styles for screens larger than 425px */
+    .hamburger {
+        display: none; /* Ensure the hamburger menu is hidden */
     }
 
-    .logo h1 {
-        font-size: 1.75rem;
-        margin-bottom: 5px;
+    .navLink {
+        display: flex !important; /* Ensure the nav links are always shown */
+        flex-direction: row; /* Keep links in a row layout */
+        justify-content: space-around;
     }
-     .navlink a{
-        font-size: 1rem;
+    .navlist{ /* Ensure nav is in row at larger screen sizes*/
+        flex-direction: row;
+    }
+}
+
+/* Mobile View (≤ 425px) */
+@media screen and (max-width: 425px) {
+    .hamburger {
+        display: block; /* Show hamburger menu icon */
+        position: absolute;
+        right: 5%;
+        top: 2rem;
+        cursor: pointer;
     }
     .navLink {
-        gap: 4px;
+        display: none; /* Hide nav links by default */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        text-align: center;
+        padding: 10px 0;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .navlink a{
-        font-size: 1rem;
+    .navLink.active {
+        display: flex;/* Show when menu is open */
+        margin-left: 11rem;
+        width: 15rem;
     }
-  
+    .navLink ul {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .navLink li {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .navLink a {
+        font-size: 1.5rem;
+        display: block;
+        padding: 10px;
+    }
 }
+
+
