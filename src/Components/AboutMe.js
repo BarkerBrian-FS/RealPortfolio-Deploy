@@ -65,6 +65,7 @@ const AboutMe = () => {
             marginRight: isMobile ? '-5rem' : isLargeScreen ? '-10rem' : '10rem',
             marginBottom: isMobile ? '2rem' : '10rem',
             maxWidth: isLargeScreen ? '70%' : '100%',
+            backgroundImage: isMobile ? 'linear-gradient(to right, transparent 1%, black 100%)': 'linear-gradient(to right, transparent 100%, black 0%)',
         },
         bodySpace: {
             width: '100%',
