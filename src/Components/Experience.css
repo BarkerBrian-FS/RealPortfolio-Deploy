@@ -1,8 +1,9 @@
-.rocketbg{
+.rocketBg{
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-height: fit-content;
 }
 /* Tablet (max-width: 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -54,7 +55,7 @@
 
 /* Responsive for screens 425px and below */
 @media screen and (max-width: 425px) {
-
+  
 }
   
   

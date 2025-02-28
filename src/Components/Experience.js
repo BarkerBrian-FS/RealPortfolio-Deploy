@@ -61,7 +61,7 @@ const Experience = () => {
                         onClick={() => toggleSkillText(index)}
                         style={{ cursor: screenSize <= 425 ? 'pointer' : 'default' }}
                     >
-                        <div style={styles.expBlock(screenSize)}>
+                        <div className='expContent' style={styles.expBlock(screenSize)}>
                             <img
                                 className='expLogo'
                                 src={skill.img}
@@ -92,7 +92,6 @@ const styles = {
         alignItems: 'center',
         height: '80%',
         marginTop: '60px',
-        marginBottom: '-90px',
         flexWrap: 'wrap',
         padding: '0 20px',
     },
@@ -111,7 +110,7 @@ const styles = {
         flexDirection: screenSize <= 425 ? 'column' : 'row',
         alignItems: 'center',
         marginTop: screenSize <= 425 ? '60px' : '5rem',
-        marginBottom: '30px',
+        marginBottom: '60px',
         flexWrap: 'wrap',
         textAlign: screenSize <= 425 ? 'center' : 'left',
         maxWidth: '600px',
