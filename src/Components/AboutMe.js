@@ -37,7 +37,7 @@ const AboutMe = () => {
                 : '950px', // Large screen image height
             width: 'auto',
             marginTop: isMobile ? '10rem': isLargeScreen ? '8rem' : '0rem',
-            marginLeft: isMobile ? '10rem' : '10rem',
+            marginLeft: isMobile ? '8rem' : '10rem',
             marginRight: isMobile ? '-10rem' : isLargeScreen ? '-10rem' : '10rem',
         },
         name: {
