@@ -1,23 +1,53 @@
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../images/LogoBackground.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures it's above all other content */
+}
+.lottie {
+  width: 600px;
+  height: 600px;
+}
+
 @media screen and (max-width: 1024px) and (min-width: 769px) {
-    .loading {
+    .loading-screen {
       background-size: contain;
     }
   
-    .loading lottie-player {
-      width: 250px;
-      height: 250px;
+    .lottie {
+      width: 900px;
+      height: 900px;
     }
   }
   
   /* Mobile (max-width: 768px) */
   @media screen and (max-width: 768px) and (min-width: 601px) {
-    .loading {
-      flex-direction: column;
-      text-align: center;
+    .loading-screen {
+      background-size: contain;
     }
-  
-    .loading lottie-player {
-      width: 180px;
-      height: 180px;
+    .lottie {
+      width: 500px;
+      height: 500px;
     }
   }
+  
+  /* Phone (max-width: 425px) */
+  @media screen and (max-width: 425px) {
+    .lottie {
+      width: 400px;
+      height: 400px;
+    }
+  
+    .loading-screen {
+      background-size: contain; /* Adjust background scaling */
+    }
+  }
+  

@@ -5,10 +5,10 @@ import {
   NextButton,
   PrevButton,
   usePrevNextButtons
-} from './emblaCarouselArrowButtons';
+} from './EmblaCarouselArrowButtons';
 import cryptoWatch from '../videos/cryptoWatch.mp4';
 import asteroids from '../videos/asteroids.mp4';
-import './emblaCarousel.css';
+import './EmblaCarousel.css';
 import spaceBgProject from '../images/spaceBgProject.jpg';
 import { motion } from 'framer-motion';
 

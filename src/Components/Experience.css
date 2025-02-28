@@ -51,6 +51,11 @@
     margin-top: 5px;
   }
 }
+
+/* Responsive for screens 425px and below */
+@media screen and (max-width: 425px) {
+
+}
   
   
   

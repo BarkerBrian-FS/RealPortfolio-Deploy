@@ -21,23 +21,20 @@ const skills = [
 ];
 
 const Experience = () => {
-    const [screenSize, setScreenSize] = useState(
-        window.innerWidth <= 768 ? "mobile" : window.innerWidth <= 1024 ? "tablet" : "desktop"
-    );
+    const [screenSize, setScreenSize] = useState(window.innerWidth);
+    const [selectedSkill, setSelectedSkill] = useState(null);
 
     useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 768) {
-                setScreenSize("mobile");
-            } else if (window.innerWidth <= 1024) {
-                setScreenSize("tablet");
-            } else {
-                setScreenSize("desktop");
-            }
-        };
+        const handleResize = () => setScreenSize(window.innerWidth);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+
+    const toggleSkillText = (index) => {
+        if (screenSize <= 425) {
+            setSelectedSkill(selectedSkill === index ? null : index);
+        }
+    };
 
     return (
         <div 
@@ -49,28 +46,36 @@ const Experience = () => {
                 url(${galaxyBg})`
             }}
         >
+            {screenSize <= 425 && (
+                <h1 style={styles.clickMeText}>Click Me!</h1>
+            )}
             <div className="experience" style={styles.experience}>
                 {skills.map((skill, index) => (
-                        <motion.div
-                            key={index}
-                            className="exp-block"
-                            initial={{ opacity: 0, y: 50 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7, ease: "easeOut" }}
-                            viewport={{ once: true }}>
-                            <div style={styles.expBlock(screenSize)}>
-                                <img
-                                    className='expLogo'
-                                    src={skill.img}
-                                    alt={skill.text}
-                                    loading="lazy"
-                                    style={styles.logo(screenSize)}
-                                />
+                    <motion.div
+                        key={index}
+                        className="exp-block"
+                        initial={{ opacity: 0, y: 50 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        onClick={() => toggleSkillText(index)}
+                        style={{ cursor: screenSize <= 425 ? 'pointer' : 'default' }}
+                    >
+                        <div style={styles.expBlock(screenSize)}>
+                            <img
+                                className='expLogo'
+                                src={skill.img}
+                                alt={skill.text}
+                                loading="lazy"
+                                style={styles.logo(screenSize)}
+                            />
+                            {(screenSize > 425 || selectedSkill === index) && (
                                 <p className='expText' style={styles.text(screenSize)}>
                                     {skill.years}+ years of experience with {skill.text}
                                 </p>
-                            </div>
-                        </motion.div>
+                            )}
+                        </div>
+                    </motion.div>
                 ))}
             </div>
         </div>
@@ -87,30 +92,49 @@ const styles = {
         alignItems: 'center',
         height: '80%',
         marginTop: '60px',
+        marginBottom: '-90px',
         flexWrap: 'wrap',
         padding: '0 20px',
     },
+    clickMeText: {
+        fontSize: '1.6rem',
+        fontFamily: 'Anta, sans-serif',
+        color: 'white',
+        textAlign: 'center',
+        marginTop: '60px',
+        marginBottom: '-75px',
+        fontWeight: 'bold',
+        textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+    },
     expBlock: (screenSize) => ({
         display: 'flex',
-        flexDirection: screenSize === "mobile" ? 'column' : 'row',
+        flexDirection: screenSize <= 425 ? 'column' : 'row',
         alignItems: 'center',
-        marginTop: screenSize === "mobile" ? '60px' : '5rem',
+        marginTop: screenSize <= 425 ? '60px' : '5rem',
         marginBottom: '30px',
         flexWrap: 'wrap',
-        textAlign: screenSize === "mobile" ? 'center' : 'left',
+        textAlign: screenSize <= 425 ? 'center' : 'left',
         maxWidth: '600px',
-       
     }),
     logo: (screenSize) => ({
-        height: screenSize === "mobile" ? '60px' : screenSize === "tablet" ? '70px' : '100px',
-        width: screenSize === "mobile" ? '60px' : screenSize === "tablet" ? '70px' : '100px',
+        height: screenSize <= 425 ? '60px' : screenSize <= 768 ? '70px' : '100px',
+        width: screenSize <= 425 ? '60px' : screenSize <= 768 ? '70px' : '100px',
         flexShrink: 0,
     }),
     text: (screenSize) => ({
         fontFamily: 'Anta, sans-serif',
-        fontSize: screenSize === "mobile" ? '1rem' : screenSize === "tablet" ? '1.2rem' : '1.5rem',
+        fontSize: screenSize <= 425 ? '1rem' : screenSize <= 768 ? '1.2rem' : '1.5rem',
         color: 'white',
-        marginLeft: screenSize === "mobile" ? '0' : '20px',
-        marginTop: screenSize === "mobile" ? '10px' : '0',
+        marginLeft: screenSize <= 425 ? '0' : '20px',
+        marginTop: screenSize <= 425 ? '10px' : '0',
     }),
 };
+
+
+
+
+
+
+
+
+

@@ -36,7 +36,7 @@ const AboutMe = () => {
                 : isDesktop ? '950px' 
                 : '950px', // Large screen image height
             width: 'auto',
-            marginTop: isMobile ? '15rem': isLargeScreen ? '8rem' : '0rem',
+            marginTop: isMobile ? '10rem': isLargeScreen ? '8rem' : '0rem',
             marginLeft: isMobile ? '10rem' : '10rem',
             marginRight: isMobile ? '-10rem' : isLargeScreen ? '-10rem' : '10rem',
         },
@@ -45,18 +45,18 @@ const AboutMe = () => {
             fontFamily: 'Anta, sans-serif',
             fontWeight: 'bold',
             fontStyle: 'normal',
-            fontSize: isMobile ? '2.5rem' 
+            fontSize: isMobile ? '2rem' 
                 : isTablet ? '3rem' 
                 : isDesktop ? '4rem' 
                 : '5rem', // Large screen font size
             marginLeft: isMobile ? '0rem': '10rem',
-            marginTop: isMobile ? '5rem' : isLargeScreen ? '-8rem' : '20rem',
+            marginTop: isMobile ? '1rem' : isLargeScreen ? '-8rem' : '20rem',
         },
         para: {
             fontFamily: 'Anta, sans-serif',
             fontWeight: 400,
             fontStyle: 'normal',
-            fontSize: isMobile ? '1.2rem' 
+            fontSize: isMobile ? '1rem' 
                 : isTablet ? '1.2rem' 
                 : isDesktop ? '1.5rem' 
                 : '1.8rem', // Larger text for large screens

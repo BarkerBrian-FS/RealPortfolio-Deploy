@@ -1,7 +1,7 @@
 import React from 'react';
-import Nav from '../Components/topNav';
-import ContactForm from '../Components/contactForm'
-import EmblaCarousel from '../Components/emblaCarousel';
+import Nav from '../Components/TopNav.js';
+import ContactForm from '../Components/ContactForm'
+import EmblaCarousel from '../Components/EmblaCarousel.js';
 import AboutMe from  '../Components/AboutMe';
 import Experience from '../Components/Experience';
 
