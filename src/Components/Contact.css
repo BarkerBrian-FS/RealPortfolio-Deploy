@@ -75,7 +75,7 @@
 }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 414px) and (min-width: 375px) {
   .contact-form {
     width: 80%; /* Make the form take most of the screen width */
     margin: auto; /* Center the form */

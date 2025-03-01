@@ -5,15 +5,15 @@ import spacebg from '../images/spacebg.jpg';
 import './About.css';
 const AboutMe = () => {
 
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 414);
     const [isTablet, setIsTablet] = useState(window.innerWidth >= 768 && window.innerWidth < 1024);
     const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 1024 && window.innerWidth < 1440);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1440);
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 768);
-            setIsTablet(window.innerWidth >= 768 && window.innerWidth < 1024);
+            setIsMobile(window.innerWidth < 414);
+            setIsTablet(window.innerWidth >= 415 && window.innerWidth < 1024);
             setIsDesktop(window.innerWidth >= 1024 && window.innerWidth < 1440);
             setIsLargeScreen(window.innerWidth >= 1440);
         };

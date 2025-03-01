@@ -59,7 +59,7 @@
 }
 
 /* Mobile View (≤ 425px) */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 414px) and (min-width: 375px) {
     .hamburger {
         display: block; /* Show hamburger menu icon */
         position: absolute;
