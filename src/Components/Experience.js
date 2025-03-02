@@ -31,7 +31,7 @@ const Experience = () => {
     }, []);
 
     const toggleSkillText = (index) => {
-        if (screenSize <= 414 && screenSize >= 376) {
+        if (screenSize <= 500 && screenSize >= 340) {
             setSelectedSkill(selectedSkill === index ? null : index);
         }
     };
@@ -46,7 +46,7 @@ const Experience = () => {
                 url(${galaxyBg})`
             }}
         >
-            {screenSize <= 425 && (
+            {screenSize <= 500 && (
                 <h1 style={styles.clickMeText}>Click Me!</h1>
             )}
             <div className="experience" style={styles.experience}>
@@ -69,7 +69,7 @@ const Experience = () => {
                                 loading="lazy"
                                 style={styles.logo(screenSize)}
                             />
-                            {(screenSize > 414 || selectedSkill === index) && (
+                            {(screenSize > 500 || selectedSkill === index) && (
                                 <p className='expText' style={styles.text(screenSize)}>
                                     {skill.years}+ years of experience with {skill.text}
                                 </p>
@@ -107,25 +107,25 @@ const styles = {
     },
     expBlock: (screenSize) => ({
         display: 'flex',
-        flexDirection: screenSize <= 414 ? 'column' : 'row',
+        flexDirection: screenSize <= 500 ? 'column' : 'row',
         alignItems: 'center',
-        marginTop: screenSize <= 414 ? '60px' : '5rem',
+        marginTop: screenSize <= 500 ? '60px' : '5rem',
         marginBottom: '60px',
         flexWrap: 'wrap',
-        textAlign: screenSize <= 414 ? 'center' : 'left',
+        textAlign: screenSize <= 500 ? 'center' : 'left',
         maxWidth: '600px',
     }),
     logo: (screenSize) => ({
-        height: screenSize <= 414 ? '60px' : screenSize <= 768 ? '70px' : '100px',
-        width: screenSize <= 414 ? '60px' : screenSize <= 768 ? '70px' : '100px',
+        height: screenSize <= 500 ? '60px' : screenSize <= 768 ? '70px' : '100px',
+        width: screenSize <= 500 ? '60px' : screenSize <= 768 ? '70px' : '100px',
         flexShrink: 0,
     }),
     text: (screenSize) => ({
         fontFamily: 'Anta, sans-serif',
-        fontSize: screenSize <= 414 ? '1rem' : screenSize <= 768 ? '1.2rem' : '1.5rem',
+        fontSize: screenSize <= 500 ? '1rem' : screenSize <= 768 ? '1.2rem' : '1.5rem',
         color: 'white',
-        marginLeft: screenSize <= 414 ? '0' : '20px',
-        marginTop: screenSize <= 414 ? '10px' : '0',
+        marginLeft: screenSize <= 500 ? '0' : '20px',
+        marginTop: screenSize <= 500 ? '10px' : '0',
     }),
 };
 
