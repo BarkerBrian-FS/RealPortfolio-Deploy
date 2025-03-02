@@ -134,7 +134,7 @@
  
 }
 
-@media screen and (max-width: 414px) and (min-width: 375px) {
+@media screen and (max-width: 500px) and (min-width: 340px) {
   .embla__slide__img{
     margin-left: 1rem;
     height: 90%;
